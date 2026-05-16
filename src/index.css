@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-cream text-charcoal;
+    letter-spacing: 0.3px;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif font-bold;
+  }
+
+  h1 {
+    @apply text-5xl md:text-6xl;
+  }
+
+  h2 {
+    @apply text-4xl md:text-5xl;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl;
+  }
+
+  a {
+    @apply transition-all duration-300;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-8 py-3 bg-charcoal text-cream font-serif hover:bg-gold hover:text-charcoal transition-all duration-300;
+  }
+
+  .btn-secondary {
+    @apply px-8 py-3 border-2 border-charcoal text-charcoal font-serif hover:bg-charcoal hover:text-cream transition-all duration-300;
+  }
+
+  .section-padding {
+    @apply py-16 md:py-24 px-4 md:px-8;
+  }
+
+  .section-title {
+    @apply text-4xl md:text-5xl font-serif mb-12 text-center;
+  }
+
+  .nav-link {
+    @apply text-charcoal hover:text-gold transition-colors duration-300;
+  }
+
+  .nav-link-active {
+    @apply text-gold border-b-2 border-gold;
+  }
+
+  .card-hover {
+    @apply transition-all duration-500 hover:shadow-lg;
+  }
+
+  .luxury-text {
+    @apply text-charcoal font-serif leading-relaxed;
+  }
+}
