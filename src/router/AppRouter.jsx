@@ -10,6 +10,9 @@ import SavoirFairePage from '../pages/SavoirFairePage'
 import HeritagePage from '../pages/HeritagePage'
 import CartPage from '../pages/CartPage'
 import ContactPage from '../pages/ContactPage'
+import CarsPage from '../pages/CarsPage'
+import AddCarPage from '../pages/AddCarPage'
+import AddUserPage from '../pages/AddUserPage'
 import NotFoundPage from '../pages/NotFoundPage'
 
 const ScrollToTop = () => {
@@ -33,11 +36,14 @@ const AppRouter = () => {
             <Route path="/" element={<HomePage />} />
             <Route path="/collections" element={<CollectionsPage />} />
             <Route path="/collections/:category" element={<CategoryPage />} />
+            <Route path="/voitures" element={<CarsPage />} />
             <Route path="/produit/:id" element={<ProductPage />} />
             <Route path="/savoir-faire" element={<SavoirFairePage />} />
             <Route path="/heritage" element={<HeritagePage />} />
             <Route path="/panier" element={<CartPage />} />
             <Route path="/contact" element={<ContactPage />} />
+            <Route path="/ajouter-voiture" element={<AddCarPage />} />
+            <Route path="/creer-compte" element={<AddUserPage />} />
             <Route path="*" element={<NotFoundPage />} />
           </Routes>
         </main>
